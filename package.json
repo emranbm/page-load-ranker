@@ -1,0 +1,31 @@
+{
+  "name": "page-load-ranker",
+  "version": "1.0.0",
+  "description": "Give it a set of URLs, and see which one loads faster.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emranbm/page-load-ranker.git"
+  },
+  "keywords": [
+    "page-load-ranker",
+    "page-load",
+    "page-rank"
+  ],
+  "author": "Mr. Coder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emranbm/page-load-ranker/issues"
+  },
+  "homepage": "https://github.com/emranbm/page-load-ranker#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "emran-hbs-config": "^1.0.1",
+    "lodash": "^4.15.0",
+    "promise": "^7.1.1",
+    "request": "^2.74.0"
+  }
+}
