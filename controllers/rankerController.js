@@ -22,7 +22,12 @@ module.exports = function (sites, res) {
     });
 
     Promise.all(promises).then((ss) => {
-        res.send('ss = ' + ss + '<br>' + 'rank = ' + rank);
+        var result = "Rankings based on the load speed:<br>";
+        var i;
+        for (i = 0; i < ranks.length; i++) {
+            result += '#' + (i + 1) + ' ' + ranks[i] + '<br>';
+        }
+        res.send(result);
     }).catch((err) => {
         res.send('catch ' + err);
     });
