@@ -1,7 +1,14 @@
+<script>
+    function btnClick() {
+        document.write('Benchmarking. Please wait...');
+    }
+
+</script>
+
 <form role="form" method="POST" action="/">
     <div class="form-group">
         <label for="sites">URLs (separated by ','):</label>
         <input type="text" class="form-control" name="sites" placeholder="example: google.com, amazon.com">
     </div>
-    <button type="submit" class="btn btn-success">Evaluate</button>
+    <button type="submit" onclick="btnClick()" class="btn btn-success">Evaluate</button>
 </form>
