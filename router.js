@@ -6,7 +6,7 @@ module.exports = function (app) {
     app.post('/', (req, res) => {
         if (req.body.sites) {
             var sites = req.body.sites.split(", ");
-            require("./controllers/rankerController.js")(sites);
+            require("./controllers/rankerController.js")(sites, res);
         } else {
             res.redirect('/');
         }
